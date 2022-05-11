@@ -12,3 +12,6 @@ Note: Ideally use node16. Project contains a nvmrc to autoload node 16.
 
 ## Running Storybook
 `nx storybook webapp`
+
+## Tasks identified
+  - Go to [TASKS README](TASKS.md)
