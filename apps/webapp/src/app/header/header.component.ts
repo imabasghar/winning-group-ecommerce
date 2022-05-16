@@ -9,6 +9,6 @@ import { IHeaderItem } from './HeaderItem';
 export class HeaderComponent {
   @Input() headerItemList: IHeaderItem[] = [];
   @Input() numberOfItemsInCart?: number;
-  @Input() activeHeaderItemPath?: string;
+  @Input() activeHeaderItemPath: string | null | undefined;
   @Output() headerItemClick = new EventEmitter<string>();
 }
