@@ -14,7 +14,10 @@
         "tsConfig": "apps/webapp/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/webapp/src/favicon.ico", "apps/webapp/src/assets"],
-        "styles": ["apps/webapp/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+          "apps/webapp/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
