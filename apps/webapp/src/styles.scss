@@ -2,4 +2,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+:root {
+  --ecommerce-primary: rgb(54, 78, 183);
+  --ecommerce-primary-shade: rgb(34, 51, 124);
+
+  --ecommerce-secondary: rgb(45, 147, 45);
+}
 
