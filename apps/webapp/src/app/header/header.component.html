@@ -1,1 +1,20 @@
-<p>header works!</p>
+<div class="container">
+  <div class="logo-container">
+    <a class="logo" (click)="headerItemClick.next('/home')">
+      eComm
+    </a>
+  </div>
+  <ul class="menu-items">
+    <li *ngFor="let item of headerItemList">
+      <!-- Note: adding RouterModule breaks the storybook and we can't use routerLink atm unfortunately. -->
+      <a [class.active]="activeHeaderItemPath === item.path" (click)="headerItemClick.next(item.path)">
+        {{ item.label }}
+      </a>
+    </li>
+  </ul>
+  <div class="cart-btn-container">
+    <a (click)="headerItemClick.next('/cart')">
+      <ecommerce-cart [numberOfItemsInCart]="numberOfItemsInCart"></ecommerce-cart>
+    </a>
+  </div>
+</div>
