@@ -1,6 +1,7 @@
 <ecommerce-header
   [headerItemList]="headerItemList"
   [activeHeaderItemPath]="routeUrl$ | async"
+  [numberOfItemsInCart]="numberOfItemsInCart$ | async"
   (headerItemClick)="navigateTo($event)"
 ></ecommerce-header>
 

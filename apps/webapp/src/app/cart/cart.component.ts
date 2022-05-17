@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cart.component.scss'],
 })
 export class CartComponent {
-  @Input() numberOfItemsInCart?: number;
+  @Input() numberOfItemsInCart: number | null | undefined;
 }
