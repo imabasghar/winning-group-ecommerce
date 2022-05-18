@@ -1,0 +1,16 @@
+button {
+  padding: 8px 16px;
+  border: 2px solid;
+
+  &.add-to-cart {
+    background-color: var(--ecommerce-secondary);
+    border-color: var(--ecommerce-secondary);
+    color: var(--ecommerce-secondary-contrast);
+  }
+
+  &.remove-from-cart {
+    background-color: var(--ecommerce-danger);
+    border-color: var(--ecommerce-danger);
+    color: var(--ecommerce-danger-contrast);
+  }
+}

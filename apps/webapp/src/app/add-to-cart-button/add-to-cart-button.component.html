@@ -1,0 +1,7 @@
+<button *ngIf="!isInCart" class="add-to-cart" (click)="addToCart.next()">
+  Add to cart
+</button>
+<button *ngIf="isInCart" class="remove-from-cart" (click)="removeFromCart.next()">
+  Remove from cart
+</button>
+
