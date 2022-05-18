@@ -5,7 +5,7 @@ import { IProduct } from '../product/Product';
   name: 'productDiscount'
 })
 export class ProductDiscountPipe implements PipeTransform {
-  transform({ price, rrp }: Pick<IProduct, 'price' | 'rrp'>): unknown {
+  transform({ price, rrp }: Pick<IProduct, 'price' | 'rrp'>) {
     return rrp - price;
   }
 }
