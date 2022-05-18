@@ -1,0 +1,13 @@
+<div class="cards" *ngIf="products?.length; else noProducts">
+  <ecommerce-product-card
+    *ngFor="let product of products; trackBy: trackByFn"
+    [product]="product"
+    (addToCart)="addToCart.next(product)"
+    (removeFromCart)="removeFromCart.next(product)"
+  ></ecommerce-product-card>
+</div>
+<ng-template #noProducts>
+  <div class="no-products">
+    <img src="assets/images/no-product-found.png">
+  </div>
+</ng-template>
