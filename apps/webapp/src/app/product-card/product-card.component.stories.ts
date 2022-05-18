@@ -6,7 +6,7 @@ import { ProductStatus } from '../product/ProductStatus';
 
 
 export default {
-  title: 'Product Card/Card',
+  title: 'Product/Card',
   component: ProductCardComponent,
   decorators: [
     moduleMetadata({

@@ -5,7 +5,7 @@ import { AddToCartButtonComponent } from './add-to-cart-button.component';
 import { AddToCartButtonModule } from './add-to-cart-button.module';
 
 export default {
-  title: 'Product Card/Add To Cart',
+  title: 'Product/Add To Cart Button',
   component: AddToCartButtonComponent,
   decorators: [
     moduleMetadata({
