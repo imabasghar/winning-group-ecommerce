@@ -1,1 +1,15 @@
-<p>product-list-page works!</p>
+<ng-container *ngIf="isLoading; else productListTemplate">
+  <!-- TODO: Remove skeleton in a separate component + include stories -->
+  <div class="skeleton-loaders">
+    <div *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8]">
+      <ngx-skeleton-loader count="10" [theme]="skeletonTheme"></ngx-skeleton-loader>
+    </div>
+  </div>
+</ng-container>
+<ng-template #productListTemplate>
+  <ng-container *ngIf="productList$ | async as productList">
+    <ecommerce-product-list
+      [productList]="productList"
+    ></ecommerce-product-list>
+  </ng-container>
+</ng-template>
