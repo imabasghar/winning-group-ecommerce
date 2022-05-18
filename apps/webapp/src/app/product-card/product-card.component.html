@@ -1,0 +1,24 @@
+<div class="product-card" *ngIf="product">
+  <div class="product-card__header">
+    <img [src]="product.image" />
+
+    <div class="product-card__name">
+      {{ product.name }}
+    </div>
+  </div>
+
+  <div class="product-card__footer">
+    <div class="product-card__price-section">
+      <span class="product-card__price">${{ product.price | number }}</span>
+      <span class="product-card__discount">${{ product | productDiscount | number }} off RRP of ${{ product.rrp | number }}</span>
+    </div>
+    <div class="product-card__buttons">
+      <ecommerce-add-to-cart-button
+        [isInCart]="product.productStatus === ProductStatus.InCart"
+        (addToCart)="addToCart.next(product)"
+        (removeFromCart)="removeFromCart.next(product)"
+      ></ecommerce-add-to-cart-button>
+      <button class="product-card__compare-btn">Compare</button>
+    </div>
+  </div>
+</div>
