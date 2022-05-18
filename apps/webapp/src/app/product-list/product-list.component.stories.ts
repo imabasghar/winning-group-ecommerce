@@ -33,7 +33,7 @@ const Template: Story = (args) => ({
 export const FourProducts = Template.bind({});
 
 FourProducts.args = {
-  products: [
+  productList: [
     {
       "sku": "671695659-X",
       "name": "Veal Inside - Provimi",
@@ -80,7 +80,7 @@ FourProducts.args = {
 export const FiveProducts = Template.bind({});
 
 FiveProducts.args = {
-  products: [
+  productList: [
     {
       "sku": "671695659-X",
       "name": "Veal Inside - Provimi",
@@ -135,7 +135,7 @@ FiveProducts.args = {
 export const TenProducts = Template.bind({});
 
 TenProducts.args = {
-  products: [
+  productList: [
     {
       "sku": "671695659-X",
       "name": "Veal Inside - Provimi",
@@ -222,5 +222,5 @@ TenProducts.args = {
 export const NoProducts = Template.bind({});
 
 NoProducts.args = {
-  products: []
+  productList: []
 };

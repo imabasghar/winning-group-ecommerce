@@ -7,7 +7,7 @@ import { IProductWithCartStatus } from '../product/Product';
   styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent {
-  @Input() products?: IProductWithCartStatus[];
+  @Input() productList?: IProductWithCartStatus[];
   @Output() addToCart = new EventEmitter<IProductWithCartStatus>();
   @Output() removeFromCart = new EventEmitter<IProductWithCartStatus>();
 
